@@ -1,0 +1,126 @@
+.customer-info {
+  width: 365px;
+  background: white;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+
+.customer-text {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.customer-text p {
+  margin: 0;
+}
+
+.heading {
+  font-weight: bolder;
+}
+
+.sub-heading {
+  font-size: 10px;
+  color: gray;
+  opacity: 0.7;
+}
+
+.sub-heading-2 {
+  font-size: 10px;
+}
+
+.pie {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.pie .outer {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  color: black;
+  background: rgb(216, 216, 244)
+    linear-gradient(to right, transparent 50%, #cb1fa0 0);
+}
+
+.pie .outer h3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  color: black;
+  z-index: 1;
+}
+
+.pie .outer p {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-weight: 600;
+}
+
+.pie .outer::before {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+
+.pie .outer::after {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border-radius: 50%;
+  background: white;
+}
+
+.pie .outer::before {
+  background: #4634be;
+  transform: rotate(calc(((65 - 50) * 0.01turn)));
+}
+
+@media screen and (max-width: 475px) {
+  .customer-info {
+    width: 850px;
+    height: 450px;
+  }
+
+  .pie .outer {
+    width: 280px;
+    height: 280px;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+  }
+
+  .sub-heading-2 {
+    font-size: 20px;
+  }
+
+  .pie .outer::after {
+    inset: 40px;
+  }
+
+  .pie .outer h3 {
+    font-size: 2.4em;
+  }
+
+  .pie .outer p {
+    font-size: 20px;
+  }
+}

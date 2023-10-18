@@ -1,0 +1,162 @@
+.navlist {
+  list-style: none;
+  margin-top: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.logo p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  padding-top: 23px;
+  padding-left: 15px;
+}
+
+.navlist .nav-links {
+  height: 35px;
+  margin-bottom: 15px;
+  display: flex;
+  width: 240px;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+.navlist .nav-links-1 {
+  background-color: rgb(56, 56, 118);
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  width: 240px;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.nav-links-1 .arrow {
+  display: none;
+}
+
+.icon-div {
+  padding-top: 6.5px;
+  padding-left: 10px;
+}
+
+.nav-links li {
+  padding: 8px;
+  width: 240px;
+}
+
+.nav-links-1 li {
+  padding: 8px;
+  width: 240px;
+}
+
+.nav-links:active,
+.nav-links:hover {
+  background-color: rgb(56, 56, 118);
+  border-radius: 5px;
+  color: white;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.arrow {
+  border: solid whitesmoke;
+  margin-top: 5px;
+  float: inline-end;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.user-profile {
+  width: 275px;
+  height: 60px;
+  display: flex;
+  margin-top: 260px;
+  margin-left: 15px;
+  background-color: rgb(56, 56, 118);
+  border-radius: 5px;
+}
+
+.user-img {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.user-img img {
+  border-radius: 50%;
+  width: 45px;
+  height: 35px;
+}
+
+.user-info {
+  padding-bottom: 25px;
+  padding-left: 15px;
+  line-height: 1px;
+}
+
+.user-info p {
+  font-size: 10px;
+  color: grey;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.down-arrow {
+  margin-left: 80px;
+  padding-top: 20px;
+  font-size: 20px;
+  color: grey;
+}
+
+@media screen and (max-width: 475px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    width: 120px;
+    height: 70px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .showNav-button {
+    height: 75px;
+    width: 80px;
+    top: 15px;
+  }
+
+  .navigation-menu ul {
+    top: 75px;
+    left: 35px;
+    height: 500px;
+    font-size: 50px;
+  }
+
+  .fa-2x {
+    height: 50px;
+    width: 50px;
+  }
+}

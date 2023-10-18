@@ -1,0 +1,206 @@
+.user-text {
+  display: flex;
+}
+
+.user-text h3 {
+  margin-left: 50px;
+}
+
+.searchbox {
+  border: none;
+  width: 150px;
+  border-radius: 3px;
+  font-size: 12px;
+  height: 25px;
+  margin-left: 780px;
+  margin-top: 25px;
+  opacity: 0.7;
+}
+
+.user-details {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.user-details-containers {
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  background-color: white;
+  height: 100px;
+  width: 225px;
+  border-radius: 10px;
+}
+
+.earning-icon-rounded {
+  width: 85px;
+  height: 85px;
+  background-color: rgb(196, 231, 200);
+  border-radius: 50%;
+}
+
+.orders-icon-rounded {
+  width: 85px;
+  height: 85px;
+  background-color: rgb(234, 213, 244);
+  border-radius: 50%;
+}
+
+.income-icon-rounded {
+  width: 85px;
+  height: 85px;
+  background-color: rgb(193, 240, 248);
+  border-radius: 50%;
+}
+
+.sales-icon-rounded {
+  width: 85px;
+  height: 85px;
+  background-color: rgb(250, 187, 229);
+  border-radius: 50%;
+}
+
+.earning-icon {
+  padding: 17px;
+  opacity: 1;
+  color: green;
+}
+
+.orders-icon {
+  padding: 17px;
+  opacity: 1;
+  color: rgb(137, 47, 164);
+}
+
+.income-icon {
+  padding: 17px;
+  opacity: 1;
+  color: rgb(81, 99, 193);
+}
+
+.sales-icon {
+  padding: 20px;
+  opacity: 1;
+  color: red;
+}
+
+.text {
+  padding: 10px;
+}
+
+.user-details-containers p {
+  margin: 0;
+}
+
+.heading {
+  font-size: 10px;
+  color: grey;
+  opacity: 0.7;
+}
+
+.number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 10px;
+}
+
+.profit-span {
+  color: green;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+.loss-span {
+  color: red;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+@media screen and (max-width: 475px) {
+  .user-details {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+
+  .user-text h3 {
+    font-size: 35px;
+  }
+
+  .searchbox {
+    font-size: 20px;
+    margin-left: 420px;
+    width: 180px;
+  }
+
+  .user-details-containers {
+    width: 400px;
+    height: 200px;
+  }
+
+  .earning-icon-rounded {
+    width: 185px;
+    height: 185px;
+  }
+
+  .orders-icon-rounded {
+    width: 185px;
+    height: 185px;
+    background-color: rgb(234, 213, 244);
+    border-radius: 50%;
+  }
+
+  .income-icon-rounded {
+    width: 185px;
+    height: 185px;
+    background-color: rgb(193, 240, 248);
+    border-radius: 50%;
+  }
+
+  .sales-icon-rounded {
+    width: 185px;
+    height: 185px;
+    background-color: rgb(250, 187, 229);
+    border-radius: 50%;
+  }
+
+  .earning-icon {
+    padding: 65px;
+  }
+
+  .orders-icon {
+    padding: 65px;
+  }
+
+  .income-icon {
+    padding: 65px;
+  }
+
+  .sales-icon {
+    padding: 65px;
+  }
+
+  .text {
+    padding: 20px;
+  }
+
+  .user-details-containers p {
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .number {
+    font-size: 36px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+}

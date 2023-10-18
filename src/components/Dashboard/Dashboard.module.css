@@ -1,0 +1,14 @@
+.data {
+  margin-left: 50px;
+  margin-top: 35px;
+  display: flex;
+}
+
+@media screen and (max-width: 475px) {
+  .data {
+    display: grid;
+    gap: 3rem;
+    width: 950px;
+    margin-left: 30px;
+  }
+}

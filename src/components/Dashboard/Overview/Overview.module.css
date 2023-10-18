@@ -1,0 +1,145 @@
+.overview {
+  width: 700px;
+  background-color: white;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.overview-heading {
+  display: flex;
+}
+
+.overview-text {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.overview-text p {
+  margin: 0;
+}
+
+.heading {
+  font-weight: bolder;
+}
+
+.sub-heading {
+  color: grey;
+  opacity: 0.7;
+  font-size: 10px;
+}
+
+.dropdown {
+  border: none;
+  width: 82px;
+  height: 15px;
+  margin-top: 20px;
+  margin-left: 485px;
+  color: grey;
+  opacity: 0.7;
+  font-size: 10px;
+}
+
+.barcontainer {
+  height: 200px;
+  width: 650px;
+}
+
+.bar {
+  position: absolute;
+  transform: translateX(-50%, -50%);
+  width: 650px;
+  height: 165px;
+  background: transparent;
+  display: flex;
+}
+
+.bar .month {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.bar .month .graph {
+  position: absolute;
+  width: 40px;
+  background: rgb(234, 234, 249);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50);
+  border-radius: 10px;
+}
+
+.bar .month .graph::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 0;
+  bottom: 0;
+}
+
+.bar .month .graph::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.bar .month .graph .percent {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bar .month .bar-label {
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -25px;
+  left: 85%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 2px 6px;
+}
+
+@media screen and (max-width: 475px) {
+  .overview {
+    width: 890px;
+    margin-left: 25px;
+    height: 450px;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+  }
+
+  .dropdown {
+    margin-left: 600px;
+    font-size: 15px;
+  }
+
+  .bar {
+    width: 850px;
+    height: 300px;
+  }
+
+  .bar .month .graph {
+    width: 55px;
+  }
+
+  .bar .month .bar-label {
+    font-size: 20px;
+    bottom: -35px;
+  }
+}
